@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
-  short iter;
-  short counter = 0;
-  for(iter = 0; iter < 4; iter++){
-    if(iter/3 == 0 || iter/5 == 0)
-      counter = counter + iter;
+  int iter;
+  int counter = 0;
+  for(iter = 0; iter < 1000; iter++){
+    if(iter/3 == 1 || iter/5 == 1)
+      counter += iter;
   }
 
-  printf("%ld \n",counter);
+  printf("%d \n",counter);
   return counter;
 
 }
